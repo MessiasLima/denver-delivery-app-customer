@@ -4,7 +4,7 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
 import { RecebaPage } from '../pages/receba/receba';
-import { ContactPage } from '../pages/contact/contact';
+import { RepitaPage } from '../pages/repita/repita';
 import { PecaPage } from '../pages/peca/peca';
 import { TabsPage } from '../pages/tabs/tabs';
 
@@ -15,7 +15,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 	declarations: [
 		MyApp,
 		RecebaPage,
-		ContactPage,
+		RepitaPage,
 		PecaPage,
 		TabsPage
 	],
@@ -27,7 +27,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 	entryComponents: [
 		MyApp,
 		RecebaPage,
-		ContactPage,
+		RepitaPage,
 		PecaPage,
 		TabsPage
 	],
