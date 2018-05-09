@@ -1,7 +1,19 @@
 <ion-header>
-	<ion-navbar>
+	<ion-navbar  no-border-bottom>
 		<ion-title>Denver delivery</ion-title>
 	</ion-navbar>
+	<ion-toolbar no-border-top>
+		<ion-segment [(ngModel)]="segmentoSelecionado">
+			<ion-segment-button value="principal">
+				Principal
+			</ion-segment-button>
+			<ion-segment-button value="restaurantes">
+				Restaurantes
+			</ion-segment-button>
+		</ion-segment>
+	</ion-toolbar>
 </ion-header>
-<ion-content padding>
+<ion-content [ngSwitch]="segmentoSelecionado">
+	<page-principal *ngSwitchCase="'principal'"></page-principal>
+	<page-restaurantes *ngSwitchCase="'restaurantes'"></page-restaurantes>
 </ion-content>
