@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { LoginPage } from '../login/login';
 
 @Component({
 	selector: 'page-peca',
@@ -13,4 +14,7 @@ export class PecaPage {
 
 	}
 
+	login(){
+		this.navCtrl.push(LoginPage);
+	}
 }

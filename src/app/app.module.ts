@@ -14,6 +14,9 @@ import { PrincipalPageModule } from '../pages/principal/principal.module';
 import { RestaurantePageModule } from '../pages/restaurante/restaurante.module';
 import { RestaurantesPageModule } from '../pages/restaurantes/restaurantes.module';
 import { PrincipalPage } from '../pages/principal/principal';
+import { LoginPageModule } from '../pages/login/login.module';
+import { Facebook } from '@ionic-native/facebook';
+
 
 @NgModule({
 	declarations: [
@@ -25,12 +28,13 @@ import { PrincipalPage } from '../pages/principal/principal';
 	],
 	imports: [
 		BrowserModule,
-		IonicModule.forRoot(MyApp,{
+		IonicModule.forRoot(MyApp, {
 			mode: "ios"
 		}),
 		PrincipalPageModule,
 		RestaurantePageModule,
-		RestaurantesPageModule
+		RestaurantesPageModule,
+		LoginPageModule,
 	],
 	bootstrap: [IonicApp],
 	entryComponents: [
@@ -43,7 +47,8 @@ import { PrincipalPage } from '../pages/principal/principal';
 	providers: [
 		StatusBar,
 		SplashScreen,
-		{ provide: ErrorHandler, useClass: IonicErrorHandler }
+		{ provide: ErrorHandler, useClass: IonicErrorHandler },
+		Facebook
 	]
 })
 export class AppModule { }

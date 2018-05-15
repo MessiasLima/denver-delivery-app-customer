@@ -1,6 +1,11 @@
 <ion-header>
-	<ion-navbar  no-border-bottom>
+	<ion-navbar no-border-bottom>
 		<ion-title>Denver delivery</ion-title>
+		<ion-buttons end>
+			<button ion-button icon-only color="royal" (click)="login()">
+				<ion-icon name="person-add"></ion-icon>
+			</button>
+		</ion-buttons>
 	</ion-navbar>
 	<ion-toolbar no-border-top>
 		<ion-segment [(ngModel)]="segmentoSelecionado">
