@@ -33,7 +33,7 @@
 		"cordova-android": "7.0.0",
 		"cordova-plugin-device": "^2.0.2",
 		"cordova-plugin-facebook4": "^2.1.0",
-		"cordova-plugin-ionic-keyboard": "^2.0.5",
+		"cordova-plugin-ionic-keyboard": "^2.1.2",
 		"cordova-plugin-ionic-webview": "^1.2.1",
 		"cordova-plugin-splashscreen": "^5.0.2",
 		"cordova-plugin-whitelist": "^1.3.3",
@@ -58,7 +58,8 @@
 			"cordova-plugin-ionic-keyboard": {},
 			"cordova-plugin-facebook4": {
 				"APP_ID": "314335202283675",
-				"APP_NAME": "Denver Delivery"
+				"APP_NAME": "Denver Delivery",
+				"ANDROID_SDK_VERSION": "4.+"
 			}
 		},
 		"platforms": [
